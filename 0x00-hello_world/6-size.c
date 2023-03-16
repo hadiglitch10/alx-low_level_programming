@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: A C program print types of variables
+ * Description: using sizeof to print the size of various types
  *
  * Return: Always 0 (Success)
 */
