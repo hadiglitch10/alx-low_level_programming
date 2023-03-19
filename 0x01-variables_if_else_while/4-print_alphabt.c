@@ -19,7 +19,7 @@ int main(void)
 			ch++;
 		}
 		putchar(ch);
-		ch++
+		ch++;
 	}
 	putchar('\n');
 
