@@ -17,6 +17,7 @@ for (hr = 0; hr <= 23; hr++)
 		_putchar(':');
 		_putchar(min / 10 + '0');
 		_putchar(min % 10 + '0');
+		putchar('\n');
 	}
 }
 }
