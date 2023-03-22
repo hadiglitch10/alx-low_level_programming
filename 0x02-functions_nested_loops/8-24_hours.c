@@ -19,3 +19,4 @@ for (hr = 0; hr <= 23; hr++)
 		_putchar(min % 10 + '0');
 	}
 }
+}
