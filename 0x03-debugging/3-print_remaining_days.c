@@ -7,14 +7,13 @@
 * @month: month in number format
 * @day: day of month
 * @year: year
-* Return: void
 */
 
 void print_remaining_days(int month, int day, int year)
 {
 	/**
 	 * leap year when it can be divided
-	 * by 4 evenly or 100 and 400
+	 * by 4 evenly or by 100 and 400
 	*/
 	if ((year % 100 == 0 && year % 400 == 0) || (year % 100 == 0))
 	{
