@@ -10,7 +10,7 @@
  * Return: dest
 **/
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int dest_len = strlen(dest);
 	int i;
