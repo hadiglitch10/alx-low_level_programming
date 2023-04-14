@@ -1,4 +1,3 @@
-
 #include "main.h"
 
 /**
@@ -9,16 +8,16 @@
  */
 int *array_range(int min, int max)
 {
-	int length, j;
-	int *s;
+	int len, i;
+	int *ptr;
 
 	if (min > max)
 		return (NULL);
-	length = max - min + 1;
-	s = malloc(sizeof(int) * length);
-	if (!s)
+	len = max - min + 1;
+	ptr = malloc(sizeof(int) * len);
+	if (!ptr)
 		return (NULL);
-	for (j = 0; j < length; j++)
-		s[j] = min++;
-	return (s);
+	for (i = 0; i < len; i++)
+		ptr[i] = min++;
+	return (ptr);
 }
