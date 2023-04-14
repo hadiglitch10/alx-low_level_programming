@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -9,15 +10,15 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *ptr;
+	char *p;
 
 	if (!nmemb || !size)
 		return (NULL);
-	ptr = malloc(nmemb * size);
-	if (!ptr)
+	p = malloc(nmemb * size);
+	if (!p)
 		return (NULL);
 	nmemb *= size;
 	while (nmemb--)
-		ptr[nmemb] = 0;
-	return (ptr);
+		p[nmemb] = 0;
+	return (p);
 }
