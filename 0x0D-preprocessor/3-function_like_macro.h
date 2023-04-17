@@ -5,6 +5,6 @@
  * @X: input
  * Desc: header file
  */
-#define ABS(x) (x < 0 ? (x) * -(1) : (x))
+#define ABS(X) ((X) < 0 ? -(1) * (X) : (X))
 
 #endif
