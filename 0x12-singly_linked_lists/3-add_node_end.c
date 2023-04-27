@@ -22,15 +22,15 @@ list_t *add_node_end(list_t **head, const char *str)
 			free(new_end);
 			return (NULL);
 		}
-		new_end->len = strlen(new->str);
+		new_end->len = _strlen(new->str);
 	}
 	if (temp)
 	{
-	while (temp->next)
-	{
-		temp = temp->next;
-	}
-	temp->next = new_end;
+		while (temp->next)
+		{
+			temp = temp->next;
+		}
+		temp->next = new_end;
 	}
 	else
 	{
