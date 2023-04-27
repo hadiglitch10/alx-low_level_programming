@@ -8,6 +8,7 @@
  * @str: Address of the string to insert into the new node
  * Return: Address of the new node
  **/
+
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_end = malloc(sizeof(list_t));
@@ -25,7 +26,7 @@ list_t *add_node_end(list_t **head, const char *str)
 			free(new_end);
 			return (NULL);
 		}
-		new_end->len = _strlen(new->str);
+		new_end->len = _strlen(new_end->str);
 	}
 	if (temp)
 	{
