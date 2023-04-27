@@ -5,16 +5,18 @@
  * @h: pointer to the list
  * Return: number of nodes printed
 **/
-
 size_t print_list(const list_t *h)
 {
-	size_t cnt = 0;
+	size_t n = 0;
 
 	while (h)
 	{
-		printf("[%d] %s\n", h->len, h->str ? h->str : "(nil)");
+		if (!h->str)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
-		cnt++
+		n++;
 	}
-	return (cnt);
+	return (n);
 }
