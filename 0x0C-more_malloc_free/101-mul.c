@@ -10,7 +10,7 @@
  **/
 int main(int argc, char *argv[])
 {
-	unsigned long int mul;
+	unsigned long mul;
 	int arg_index, char_index;
 
 	if (argc != 3)
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	{
 		for (char_index = 0; argv[arg_index][char_index] != '\0'; char_index++)
 		{
-			if (argv[arg_index][char_index] > '9' || argv[arg_index][char_index] < '0')
+			if (argv[arg_index][char_index] > 57 || argv[arg_index][char_index] < 48)
 			{
 				printf("Error\n");
 				return (98);
