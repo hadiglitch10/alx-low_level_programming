@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return (EXIT_FAILURE);
+		return (98);
 	}
 
 	for (arg_index = 1; arg_index < argc; arg_index++)
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 			if (argv[arg_index][char_index] > '9' || argv[arg_index][char_index] < '0')
 			{
 				printf("Error\n");
-				return (EXIT_FAILURE);
+				return (98);
 			}
 		}
 	}
@@ -34,6 +34,6 @@ int main(int argc, char *argv[])
 	mul = atol(argv[1]) * atol(argv[2]);
 	printf("%lu\n", mul);
 
-	return (EXIT_SUCCESS);
+	return (0);
 }
 
