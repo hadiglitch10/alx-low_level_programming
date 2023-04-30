@@ -14,9 +14,9 @@ void free_listint(listint_t *head)
 
 	while (head)
 	{
-		mouse = head->next;
-		free(head);
-		head = mouse;
+		mouse = (*head)->next;
+		free(*head);
+		*head = mouse;
 	}
 	*head = NULL;
 }
