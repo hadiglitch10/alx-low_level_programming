@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * set_bit - function set 0 to 1
+ * set_bit - set 0 to 1
  *
  * @n : num
  * @index : position
